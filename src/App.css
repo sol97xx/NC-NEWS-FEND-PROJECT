@@ -1,33 +1,72 @@
-.App {
+.homepage-list {
+  list-style: none;
+  border: 2px solid red;
   text-align: center;
+  background-color: royalblue;
+  width: 80%;
+  margin: auto
+}
+.main-container{
+
+align-items: center;
+background-color: rgba(33, 33, 33, .3);
+
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Article{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.user{
+  text-align: right
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#comments-heading{
+  flex-wrap: wrap
+}
+
+.comments{
+  
+  flex-wrap: wrap;
+  
+
+
+}
+.NavBar{
+  text-align: center;
+  text-decoration: none
+
+}
+
+
+
+Link{
+  text-decoration: none
+}
+
+.topics{
+  text-align: center;
+  text-decoration: none
+
+}
+
+.header {text-align: center;
+}
+
+.comments{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column
+}
+
+
+
+
+
+.dislike-button{
+  position: relative; 
+  left: 10px;
+
 }
