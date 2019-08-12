@@ -1,9 +1,9 @@
 import "./App.css";
 import React, { Component } from "react";
-import ArticlesPage from "./homepage/Articles";
-import Article from "./SingleArticlePage/Article";
-import Header from "./homepage/Header";
-import NavBar from "./NavBar";
+import ArticlesPage from "./components/homepage/Articles";
+import Article from "./components/SingleArticlePage/Article";
+import Header from "./components/homepage/Header";
+import NavBar from "./components/NavBar";
 import { Router } from "@reach/router";
 
 class App extends Component {
