@@ -6,20 +6,22 @@ import Header from "./homepage/Header";
 import NavBar from "./NavBar";
 import { Router } from "@reach/router";
 
-class App extends Component  {
-  state={user: "jessjelly"}
-  render () {return (
-    <div className="main-container">
-      <Header />
-      <p className="user">logged in as: jessjelly</p>
-      <NavBar className="NavBar"/>
-      <Router>
-        <ArticlesPage path="/" className="home" />
-        <ArticlesPage path="/topics/:topic" className="home" />
-        <Article path="/:article_id" user={this.state.user}/>
-      </Router>
-    </div>
-  );}
-};
+class App extends Component {
+  state = { user: "jessjelly" };
+  render() {
+    return (
+      <div className="main-container" >
+        <Header className="main-head--mainitem" />
+        <p className="user--mainitem">logged in as: jessjelly</p>
+        <NavBar className="NavBar--mainitem" />
+        <Router>
+          <ArticlesPage path="/" className="home--mainitem" />
+          <ArticlesPage path="/topics/:topic" className="home--mainitem" />
+          <Article path="/:article_id" user={this.state.user} className='article-page--mainitem'/>
+        </Router>
+      </div>
+    );
+  }
+}
 
 export default App;

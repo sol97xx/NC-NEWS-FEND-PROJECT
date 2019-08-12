@@ -1,7 +1,7 @@
 import React from "react";
-import { Link } from "@reach/router";
 import VotesHandler from '../VotesHandler'
-const CommentsList = ({comments}) => {
+import DeleteComment from './DeleteComment'
+const CommentsList = ({comments, removeComment, user}) => {
   return (
     <ul className='comments'>
     <h4 id="comments-heading">Comments:</h4> <br/>
@@ -15,6 +15,9 @@ const CommentsList = ({comments}) => {
             
             <p>Author: {comment.author} </p>
             <VotesHandler votes={comment.votes} article_id={comment.comment_id} url="/comments/"/>
+            {comment.author === user && <DeleteComment removeComment={removeComment}
+            id={comment.comment_id}/> }
+
           </li>
         );
       })}

@@ -1,11 +1,11 @@
 import ArticlesList from "./ArticlesList";
 import React, { Component } from "react";
-import { Link } from "@reach/router";
 import SortForm from "./SortForm";
 import * as api from "../api";
+import ErrorHandler from "../ErrorHandler";
 
 class ArticlesPage extends Component {
-  state = { Articles: null, sortBy: "created_at" };
+  state = { Articles: null, sortBy: "created_at", err: null };
   render() {
     return (
       <>
@@ -14,23 +14,10 @@ class ArticlesPage extends Component {
           handleSubmit={this.handleSortSubmit}
           default={this.state.sortBy}
         />
-        <div className="topics">
-        <h3>View by topic:</h3>
-        <Link to="/topics/football">
-          Football
-          <br />
-        </Link>
-        <Link to="/topics/coding">
-          Coding
-          <br />
-        </Link>
-        <Link to="/topics/cooking">
-          Cooking
-          <br />
-        </Link>
-        </div>
 
-        {this.state.Articles ? (
+        {this.state.err ? (
+          <ErrorHandler err={this.state.err} />
+        ) : this.state.Articles ? (
           <ArticlesList articles={this.state.Articles} />
         ) : (
           <h1>'Articles coming soon!' </h1>
@@ -41,25 +28,28 @@ class ArticlesPage extends Component {
 
   handleSortSubmit = (e, value) => {
     e.preventDefault();
-    console.log(value);
     this.setState({ sortBy: value });
   };
 
   fetchArticles = (sort, topic) => {
-    api.fetchAllArticles(sort, topic).then(({ data }) => {
-      this.setState({ Articles: data.articles });
+    return api.fetchAllArticles(sort, topic).then(({ data }) => {
+      this.setState({ Articles: data.articles, err: null });
     });
   };
 
   componentDidMount() {
-    this.fetchArticles(this.state.sortBy, this.props.topic);
+    this.fetchArticles(this.state.sortBy, this.props.topic).catch(err => {
+      this.setState({ err: err });
+    });
   }
   componentDidUpdate(prevProps, prevState) {
     if (
       this.state.sortBy !== prevState.sortBy ||
       this.props.topic !== prevProps.topic
     ) {
-      this.fetchArticles(this.state.sortBy, this.props.topic);
+      this.fetchArticles(this.state.sortBy, this.props.topic).catch(err => {
+        this.setState({ err: err });
+      });
     }
   }
 }

@@ -7,8 +7,9 @@ class VotesHandler extends Component {
   render() {
     return (
       <>
-        <p>{this.state.votes + this.state.inc}</p>
+        <p>Votes: {this.state.votes + this.state.inc}</p>
         <button
+          className="like-button"
           disabled={this.state.inc > 0 ? true : false}
           onClick={() => {
             this.clickHandler(1);
@@ -32,11 +33,13 @@ class VotesHandler extends Component {
     this.setState(({ inc }) => {
       return { inc: inc + value };
     });
-    api.patchArticleVotes(value, this.props.article_id,this.props.url).catch(err => {
-      this.setState(({ inc }) => {
-        return { inc: inc - value };
+    api
+      .patchArticleVotes(value, this.props.article_id, this.props.url)
+      .catch(err => {
+        this.setState(({ inc }) => {
+          return { inc: inc - value };
+        });
       });
-    });
   };
 }
 

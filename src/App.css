@@ -1,72 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+.delete-button {
+  position: relative;
+  left: 50px;
+  background-color: whitesmoke;
+}
+
+.article-card{
+  display: flex;
+  flex-direction: column;
+  font-size: 20px
+}
+
+
+.error {
+  font-size: 50px;
+  height: 50%;
+  text-align: center;
+}
+
+.form {
+  display: flex
+  
+  
+}
+
+
+
+.article-name {
+  color: red;
+}
 .homepage-list {
   list-style: none;
   border: 2px solid red;
   text-align: center;
   background-color: royalblue;
   width: 80%;
-  margin: auto
+  margin: auto;
+  color: red;
 }
-.main-container{
-
-align-items: center;
-background-color: rgba(33, 33, 33, .3);
-
+#root {
+  color: royalblue;
 }
 
-.Article{
+a {
+  text-decoration: none;
+}
+
+
+
+.main-container {
+  background-color: rgba(33, 33, 33, 0.3);
+  
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  
+  
+
+  
+  
+}
+
+
+
+
+
+textarea{
+  position: relative;
+  top: 8px
+}
+
+.user {
+  text-align: right;
+}
+
+
+
+.comments {
+ 
+  position: relative;
+  top: 50px;
+  border: 2px solid purple;
+}
+.NavBar {
+  text-align: center;
+  text-decoration: none;
+  color: darkblue;
+}
+
+ul li:nth-child(even) {
+  background-color:oldlace;
+  
+}
+
+
+
+
+
+
+
+.article-name{
+  color: darkblue;
+  font-size: 22px
+}
+
+ul li div {
+  color: darkblue
   
 }
 
 .user{
-  text-align: right
+  position: relative;
+  right: 30px;
+  font-size: 17.5px
 }
 
-#comments-heading{
-  flex-wrap: wrap
+.link {
+  color: darkblue;
 }
 
-.comments{
-  
-  flex-wrap: wrap;
-  
-
-
+.article-part-1{
+  display: flex;
+  flex-direction: column;
+  padding-right: 6px
 }
-.NavBar{
+
+.article-part-2{
+  display: flex;
+  flex-direction: column;
+  padding-left: 6px
+}
+.home-header {
   text-align: center;
-  text-decoration: none
-
+  font-size: 60px;
+  
+}
+.article-description{
+  display: flex;
+  justify-content: center
 }
 
 
 
-Link{
-  text-decoration: none
-}
 
-.topics{
-  text-align: center;
-  text-decoration: none
 
-}
-
-.header {text-align: center;
-}
-
-.comments{
+.article-page{
   display: flex;
   flex-wrap: wrap;
   flex-direction: column
 }
 
+.post-button{
+  align-self: flex-end
+}
 
+.like-button {
+  background-color: green;
+}
 
-
-
-.dislike-button{
-  position: relative; 
+.dislike-button {
+  position: relative;
   left: 10px;
-
+  background-color: orange;
 }

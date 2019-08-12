@@ -1,12 +1,26 @@
 import React, { Component } from "react";
 import { Link } from "@reach/router";
-import Axios from "axios";
 
 class NavBar extends Component {
   render() {
     return (
       <nav className="NavBar">
-        <Link to="/">Home</Link>
+        <Link className="link" to="/">
+          Home
+        </Link>
+        <h3>View by topic:</h3>
+        <Link className="link" to="/topics/football">
+          Football
+          <br />
+        </Link>
+        <Link className="link" to="/topics/coding">
+          Coding
+          <br />
+        </Link>
+        <Link className="link" to="/topics/cooking">
+          Cooking
+          <br />
+        </Link>
       </nav>
     );
   }
