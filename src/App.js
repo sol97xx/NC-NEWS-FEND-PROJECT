@@ -12,7 +12,7 @@ class App extends Component {
     return (
       <div className="main-container" >
         <Header className="main-head--mainitem" />
-        <p className="user--mainitem">logged in as: jessjelly</p>
+        <p className="user">logged in as: jessjelly</p>
         <NavBar className="NavBar--mainitem" />
         <Router>
           <ArticlesPage path="/" className="home--mainitem" />

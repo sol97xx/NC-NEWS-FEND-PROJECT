@@ -8,6 +8,8 @@ class VotesHandler extends Component {
     return (
       <>
         <p>Votes: {this.state.votes + this.state.inc}</p>
+         
+        <div className= 'comment-buttons'>
         <button
           className="like-button"
           disabled={this.state.inc > 0 ? true : false}
@@ -25,7 +27,8 @@ class VotesHandler extends Component {
           className="dislike-button"
         >
           Dislike
-        </button>
+        </button> </div>
+        
       </>
     );
   }

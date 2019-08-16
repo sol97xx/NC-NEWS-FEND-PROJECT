@@ -8,19 +8,22 @@ class NavBar extends Component {
         <Link className="link" to="/">
           Home
         </Link>
+
         <h3>View by topic:</h3>
-        <Link className="link" to="/topics/football">
-          Football
-          <br />
-        </Link>
-        <Link className="link" to="/topics/coding">
-          Coding
-          <br />
-        </Link>
-        <Link className="link" to="/topics/cooking">
-          Cooking
-          <br />
-        </Link>
+        <div className="topics">
+          <Link className="link" to="/topics/football">
+            Football
+            
+          </Link>
+          <Link className="link middle-link" to="/topics/coding">
+            Coding
+            
+          </Link>
+          <Link className="link" to="/topics/cooking">
+            Cooking
+            
+          </Link>
+        </div>
       </nav>
     );
   }

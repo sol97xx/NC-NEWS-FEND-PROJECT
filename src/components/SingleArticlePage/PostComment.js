@@ -10,14 +10,14 @@ class PostComment extends Component {
  render() {
     return (
       <form className="form" onSubmit={this.handleSubmit}>
-        <label>
-          Add Comment:
+         <p>
+          Add Comment:</p>
           <textarea
             value={this.state.body}
             name="name"
             onChange={this.handleChange}
           />
-        </label>
+        
         <button className='post-button' type="submit">Post</button>
       </form>
     );

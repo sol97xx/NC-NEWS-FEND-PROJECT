@@ -8,21 +8,21 @@ class ArticlesPage extends Component {
   state = { Articles: null, sortBy: "created_at", err: null };
   render() {
     return (
-      <>
-        <h3>Sort By:</h3>
+      <div className='article-div'>
+        <div className='sort-form'>
         <SortForm
           handleSubmit={this.handleSortSubmit}
           default={this.state.sortBy}
-        />
+        /></div>
 
         {this.state.err ? (
           <ErrorHandler err={this.state.err} />
         ) : this.state.Articles ? (
           <ArticlesList articles={this.state.Articles} />
         ) : (
-          <h1>'Articles coming soon!' </h1>
+          <h1 className='loading'>'Articles coming soon!' </h1>
         )}
-      </>
+      </div>
     );
   }
 

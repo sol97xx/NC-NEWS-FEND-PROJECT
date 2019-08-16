@@ -14,9 +14,10 @@ const CommentsList = ({comments, removeComment, user}) => {
             
             
             <p>Author: {comment.author} </p>
-            <VotesHandler votes={comment.votes} article_id={comment.comment_id} url="/comments/"/>
+            <div className='votes-comment'>
+            <VotesHandler className='votes' votes={comment.votes} article_id={comment.comment_id} url="/comments/"/>
             {comment.author === user && <DeleteComment removeComment={removeComment}
-            id={comment.comment_id}/> }
+            id={comment.comment_id}/> }</div>
 
           </li>
         );

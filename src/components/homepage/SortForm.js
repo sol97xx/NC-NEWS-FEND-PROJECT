@@ -4,19 +4,22 @@ class SortForm extends Component {
   state = { value: "created_at" };
   render() {
     return (
-      <form
+      <div className='in-sort-form'>
+      <h3 className='sort-title'>Sort by:</h3>
+      <form className='form-itself'
         onSubmit={e => {
           this.props.handleSubmit(e, this.state.value);
         }}
       >
-        <select value={this.state.value} onChange={this.handleChange}>
+        <select className='sort-select' value={this.state.value} onChange={this.handleChange}>
           <option value="created_at">created_at</option>
           <option value="title">title</option>
           <option value="votes">votes</option>
           <option value="comment_count">comment_count</option>
         </select>
-        <input type="submit" value="Submit" />
+        <input className='submit-button' type="submit" value="Submit" />
       </form>
+      </div>
     );
   }
   handleChange = event => {

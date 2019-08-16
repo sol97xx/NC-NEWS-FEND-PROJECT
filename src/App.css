@@ -2,34 +2,41 @@
   margin: 0;
   padding: 0;
   outline: 0;
-  font-size: 100%;
   vertical-align: baseline;
   background: transparent;
 }
 .delete-button {
-  position: relative;
-  left: 50px;
+  
   background-color: whitesmoke;
 }
 
 .article-card{
   display: flex;
-  flex-direction: column;
-  font-size: 1rem;
-  padding-bottom: 5px
-
+  flex-direction: row;
+  
+  /* padding-bottom: 10px; */
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 80vw;
+  border: 2px solid darkblue
 }
+  
+
+
 
 
 .error {
   font-size: 50px;
   height: 50%;
   text-align: center;
-  padding-bottom: 10em
+  padding-bottom: 200%
 }
 
-.form {
-  display: flex
+
+
+.sort-title{
+  
+  font-size: calc(0.75rem + 0.5vw);
   
   
 }
@@ -37,15 +44,18 @@
 
 
 
-.homepage-list {
-  list-style: none;
-  border: 2px solid red;
-  text-align: center;
-  background-color: royalblue;
-  width: 80%;
-  margin: auto;
-  color: red;
+
+
+
+.homepage-list{
+display: flex;
+
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+width: 60vw
 }
+
 #root {
   color: royalblue;
 }
@@ -55,6 +65,24 @@ a {
 }
 
 
+.votes-handler{
+  padding-top: 10px
+}
+.sort-form{
+  align-self: flex-start
+}
+
+textarea{
+  align-self: stretch;
+  
+}
+
+
+
+
+.form{
+  padding-top: 5px
+}
 
 .main-container {
   background-color: rgba(33, 33, 33, 0.3);
@@ -62,6 +90,7 @@ a {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  padding: 20px 20px 20px 20px
   
   
 
@@ -86,9 +115,10 @@ textarea{
 
 .comments {
  
-  position: relative;
-  top: 50px;
-  border: 2px solid purple;
+  
+  
+  border: 2px solid grey;
+  margin-top: 50px
 }
 .NavBar {
   text-align: center;
@@ -96,26 +126,49 @@ textarea{
   color: darkblue;
 }
 
-ul li:nth-child(even) {
-  background-color:oldlace;
+
+
+ul li:nth-child(2n) {
+  background-color: grey;
   
 }
 
-ul li:nth-child(odd) {
-  background-color: rgba(255, 166, 0, 0.5);
-  
+
+
+
+
+.link{
+  font-style: oblique
 }
 
+.loading{
+  margin-bottom: 200%
+}
 
+.middle-link{
+  padding-left: 1vw;
+  padding-right: 1vw
+}
+.article-body{
+  border: 2px solid grey;
+}
 
+.article-body{font-size: calc(0.75rem + 0.5vw)}
 
-
-
-
+.article-title{
+align-self: center;
+width: 50vw
+}
 
 .article-name{
   color: darkblue;
-  font-size: 1em
+  font-size: calc(0.6rem + 1vw);
+  
+}
+
+.article-text{
+  font-size: calc(0.48rem + 0.8vw);
+  font-family: 'Times New Roman', Times, serif
 }
 
 ul li div {
@@ -126,7 +179,7 @@ ul li div {
 .user{
   position: relative;
   right: 30px;
-  font-size: 17.5px
+  font-size: calc(0.48rem + 0.8vw)
 }
 
 .link {
@@ -136,7 +189,8 @@ ul li div {
 .article-part-1{
   display: flex;
   flex-direction: column;
-  padding-right: 6px
+  padding-right: 6px;
+  width: 15vw
 }
 
 .article-part-2{
@@ -146,7 +200,7 @@ ul li div {
 }
 .home-header {
   text-align: center;
-  font-size: 60px;
+  font-size: calc(0.9rem + 3.5vw)
   
 }
 .article-description{
@@ -156,24 +210,55 @@ ul li div {
 
 
 
+ul{list-style: none;}
 
-
-.article-page{
+.article-container{
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column
+  flex-direction: column;
+  
 }
 
-.post-button{
-  align-self: flex-end
-}
+
 
 .like-button {
-  background-color: green;
+  
+  
+  width: 50px;
+  background-color: rgba(46, 143, 8, 0.459)
 }
 
 .dislike-button {
-  position: relative;
-  left: 10px;
-  background-color: orange;
+  
+  
+  width: 50px;
+  background-color: rgba(219, 10, 10, 0.459)
+}
+
+.votes{
+  display: flex;
+}
+
+.dislike-button:hover span {
+  padding-right: 50px;
+}
+
+.topics{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center
+
+}
+.article-div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center
+  
+}
+
+.home--mainitem{
+  display: flex;
+  flex-wrap: wrap
 }

@@ -11,7 +11,7 @@ class Comments extends Component {
     return (
       <>
         
-        <PostComment
+        <PostComment 
           addComment={this.addComment}
           id={this.props.article_id}
           user={this.props.user}
