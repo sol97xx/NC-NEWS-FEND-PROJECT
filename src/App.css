@@ -5,6 +5,10 @@
   vertical-align: baseline;
   background: transparent;
 }
+button{
+  border-radius: 5px
+}
+
 .delete-button {
   
   background-color: whitesmoke;
@@ -56,8 +60,9 @@ justify-content: center;
 width: 60vw
 }
 
+
 #root {
-  color: royalblue;
+  color: darkblue;
 }
 
 a {
@@ -85,7 +90,7 @@ textarea{
 }
 
 .main-container {
-  background-color: rgba(33, 33, 33, 0.3);
+  background-color: rgba(33, 33, 33, 0.151);
   
   display: flex;
   flex-direction: column;
@@ -151,14 +156,24 @@ ul li:nth-child(2n) {
 }
 .article-body{
   border: 2px solid grey;
+  color: darkblue;
+  font-size: calc(0.75rem + 0.5vw)
+}
+.author{
+  color: darkblue
 }
 
-.article-body{font-size: calc(0.75rem + 0.5vw)}
+
 
 .article-title{
 align-self: center;
-width: 50vw
+width: 50vw;
+
 }
+.article-title:hover{
+  text-decoration: none
+  
+  }
 
 .article-name{
   color: darkblue;
@@ -198,9 +213,12 @@ ul li div {
   flex-direction: column;
   padding-left: 6px
 }
+
+
 .home-header {
   text-align: center;
-  font-size: calc(0.9rem + 3.5vw)
+  font-size: calc(0.9rem + 3.5vw);
+  color: darkblue
   
 }
 .article-description{
@@ -223,17 +241,37 @@ ul{list-style: none;}
 
 .like-button {
   
-  
+  transition-duration: 500ms;
   width: 50px;
-  background-color: rgba(46, 143, 8, 0.459)
+  background-color: rgba(46, 143, 8, 0.37)
 }
 
+
+.like-button:hover{
+  background-color: green
+}
+.dislike-button:hover{
+  background-color: red;
+  
+}
+.like-button:disabled{
+  background-color: green;
+  color: green
+}
+a:hover{
+text-decoration: underline
+}
+.dislike-button:disabled{
+  background-color: red;
+  color: red
+}
 .dislike-button {
   
-  
+  transition-duration: 500ms;
   width: 50px;
-  background-color: rgba(219, 10, 10, 0.459)
+  background-color: rgba(219, 10, 10, 0.37)
 }
+
 
 .votes{
   display: flex;
