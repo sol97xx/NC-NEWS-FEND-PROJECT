@@ -24,3 +24,5 @@ CSS
 Links:
 Hosted back end to NC-NEWS :  https://sol-ncnews-bend.herokuapp.com/api
 Hosted front end to NC-NEWS : https://sol-nc-news.netlify.com
+Back end git repository:
+Front end git repository: 

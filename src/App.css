@@ -18,11 +18,11 @@ button{
   display: flex;
   flex-direction: row;
   
-  /* padding-bottom: 10px; */
-  padding-left: 5px;
-  padding-right: 5px;
+  height: 55px;
   width: 80vw;
-  border: 2px solid darkblue
+  border: 2px solid darkblue;
+  justify-content: flex-end;
+  
 }
   
 
@@ -57,7 +57,7 @@ display: flex;
 flex-direction: row;
 flex-wrap: wrap;
 justify-content: center;
-width: 60vw
+width: 85vw
 }
 
 
@@ -74,7 +74,8 @@ a {
   padding-top: 10px
 }
 .sort-form{
-  align-self: flex-start
+  align-self: flex-start;
+  padding-left: 7.8vw
 }
 
 textarea{
@@ -166,8 +167,9 @@ ul li:nth-child(2n) {
 
 
 .article-title{
-align-self: center;
+
 width: 50vw;
+margin-right: auto
 
 }
 .article-title:hover{
@@ -182,8 +184,9 @@ width: 50vw;
 }
 
 .article-text{
-  font-size: calc(0.48rem + 0.8vw);
-  font-family: 'Times New Roman', Times, serif
+  /* font-size: calc(0.48rem + 0.8vw); */
+  font-family: 'Times New Roman', Times, serif;
+  font-size: calc(0.35rem + 0.8vw)
 }
 
 ul li div {
@@ -204,14 +207,19 @@ ul li div {
 .article-part-1{
   display: flex;
   flex-direction: column;
-  padding-right: 6px;
+  
   width: 15vw
 }
 
 .article-part-2{
   display: flex;
   flex-direction: column;
-  padding-left: 6px
+  margin-left: auto;
+  
+  justify-content: flex-start;
+  width: 15vw
+  /* padding-left: 2vw;
+  padding-right: 2vw */
 }
 
 
@@ -221,9 +229,14 @@ ul li div {
   color: darkblue
   
 }
+
 .article-description{
   display: flex;
-  justify-content: center
+  flex-direction: row;
+  
+  
+  width: 30vw
+ 
 }
 
 
@@ -234,6 +247,8 @@ ul{list-style: none;}
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  justify-content: center;
+  
   
 }
 
