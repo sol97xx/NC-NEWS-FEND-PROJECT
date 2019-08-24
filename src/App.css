@@ -22,7 +22,7 @@ button{
   width: 80vw;
   border: 2px solid darkblue;
   justify-content: flex-end;
-  
+  border-bottom: 1px solid darkblue;
 }
   
 
