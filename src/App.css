@@ -18,8 +18,8 @@ button{
   display: flex;
   flex-direction: row;
   
-  height: 55px;
-  width: 90vw;
+  /* height: 55px; */
+  width: 80vw;
   border: 2px solid darkblue;
   justify-content: flex-end;
   border-bottom: 1px solid darkblue;
@@ -57,7 +57,7 @@ display: flex;
 flex-direction: row;
 flex-wrap: wrap;
 justify-content: center;
-width: 95vw
+width: 80vw
 }
 
 
@@ -96,7 +96,7 @@ textarea{
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  /* padding: 15px 15px 15px 15px */
+  padding: 20px 20px 20px 20px
   
   
 
@@ -168,7 +168,7 @@ ul li:nth-child(2n) {
 
 .article-title{
 
-width: 50vw;
+width: 40vw;
 margin-right: auto
 
 }
@@ -210,7 +210,7 @@ ul li div {
   display: flex;
   flex-direction: column;
   
-  width: 25vw;
+  width: 15vw;
   padding-left: 5vw
 }
 
@@ -238,7 +238,7 @@ ul li div {
   flex-direction: row;
   
   
-  width: 40vw
+  width: 30vw
  
 }
 
