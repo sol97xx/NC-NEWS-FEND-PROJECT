@@ -185,8 +185,9 @@ margin-right: auto
 
 .article-text{
   /* font-size: calc(0.48rem + 0.8vw); */
-  font-family: 'Times New Roman', Times, serif;
-  font-size: calc(0.35rem + 0.8vw)
+  font-family: 'Oswald', sans-serif;
+  /* 'Times New Roman', Times, serif; */
+  font-size: calc(0.30rem + 0.8vw)
 }
 
 ul li div {
