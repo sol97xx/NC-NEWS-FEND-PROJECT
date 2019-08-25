@@ -168,7 +168,7 @@ ul li:nth-child(2n) {
 
 .article-title{
 
-width: 40vw;
+width: 35vw;
 margin-right: auto
 
 }
@@ -210,7 +210,7 @@ ul li div {
   display: flex;
   flex-direction: column;
   
-  width: 15vw;
+  width: 25vw;
   padding-left: 5vw
 }
 
@@ -220,7 +220,7 @@ ul li div {
   margin-left: auto;
   
   justify-content: flex-start;
-  width: 15vw;
+  width: 20vw;
   padding-left: 4vw;
   
 }
@@ -238,7 +238,7 @@ ul li div {
   flex-direction: row;
   
   
-  width: 30vw
+  width: 45vw
  
 }
 
