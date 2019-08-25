@@ -23,6 +23,7 @@ button{
   border: 2px solid darkblue;
   justify-content: flex-end;
   border-bottom: 1px solid darkblue;
+  padding-bottom: 5px;
 }
   
 
@@ -169,7 +170,9 @@ ul li:nth-child(2n) {
 .article-title{
 
 width: 35vw;
-margin-right: auto
+margin-right: auto;
+
+
 
 }
 .article-title:hover{
@@ -236,6 +239,7 @@ ul li div {
 .article-description{
   display: flex;
   flex-direction: row;
+  
   
   
   width: 45vw
