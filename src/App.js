@@ -7,7 +7,7 @@ import NavBar from "./components/NavBar";
 import { Router } from "@reach/router";
 
 class App extends Component {
-  state = { user: "jessjelly" };
+  state = { user: "CameronTheCunt" };
   render() {
     return (
       <div className="main-container" >
