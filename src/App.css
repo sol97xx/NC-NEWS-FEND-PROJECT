@@ -85,8 +85,9 @@ textarea{
 }
 
 .article-title-name{
-  width: 40vw;
+  width: 80vw;
   margin: auto;
+  text-align: center;
   font-size: calc(0.75rem + 0.5vw)
 }
 
