@@ -84,7 +84,11 @@ textarea{
   
 }
 
-
+.article-title-name{
+  width: 40vw;
+  margin: auto;
+  font-size: calc(0.75rem + 0.5vw)
+}
 
 
 .form{
@@ -189,7 +193,8 @@ margin-right: auto;
 
 .article-text{
   /* font-size: calc(0.48rem + 0.8vw); */
-  font-family: 'Oswald', sans-serif;
+  /* font-family: 'Oswald', sans-serif; */
+  font-family: 'Merriweather', serif;
   /* 'Times New Roman', Times, serif; */
   font-size: calc(0.30rem + 0.8vw)
 }
