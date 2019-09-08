@@ -1,330 +1,451 @@
-* {
-  margin: 0;
-  padding: 0;
-  outline: 0;
-  vertical-align: baseline;
-  background: transparent;
-}
-button{
-  border-radius: 5px
-}
-
-.delete-button {
-  
-  background-color: whitesmoke;
-}
-
-.article-card{
-  display: flex;
-  flex-direction: row;
-  
-  /* height: 55px; */
-  width: 80vw;
-  border: 2px solid darkblue;
-  justify-content: flex-end;
-  border-bottom: 1px solid darkblue;
-  padding-bottom: 5px;
-}
-  
-
-
-
-
-.error {
-  font-size: 50px;
-  height: 50%;
-  text-align: center;
-  padding-bottom: 200%
+/* .homepage-list{
+    padding: 0 0 0 0;
+  width: 90%;
+  margin: 0 auto; 
+   
 }
 
 
 
-.sort-title{
-  
-  font-size: calc(0.75rem + 0.5vw);
-  
-  
-}
-
-
-
-
-
-
-
-.homepage-list{
-display: flex;
-
-flex-direction: row;
-flex-wrap: wrap;
-justify-content: center;
-width: 80vw
-}
-
-
-#root {
-  color: darkblue;
-}
-
-a {
-  text-decoration: none;
-}
-
-
-.votes-handler{
-  padding-top: 10px
-}
-.sort-form{
-  align-self: flex-start;
-  padding-left: 7.8vw
-}
-
-textarea{
-  align-self: stretch;
-  
-}
-
-.article-title-name{
-  width: 80vw;
-  margin: auto;
-  text-align: center;
-  font-size: calc(0.75rem + 0.5vw)
-}
-
-
-.form{
-  padding-top: 5px
-}
-
-.main-container {
-  background-color: rgba(33, 33, 33, 0.151);
-  
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  padding: 20px 20px 20px 20px
-  
-  
-
-  
-  
-}
-
-
-
-
-
-textarea{
-  position: relative;
-  top: 8px
-}
-
-.user {
-  text-align: right;
-}
-
-
-
-.comments {
- 
-  
-  
-  border: 2px solid grey;
-  margin-top: 50px
-}
-.NavBar {
-  text-align: center;
-  text-decoration: none;
-  color: darkblue;
-}
-
-
-
-ul li:nth-child(2n) {
-  background-color: grey;
-  
-}
-
-
-
-
-
-.link{
-  font-style: oblique
-}
-
-.loading{
-  margin-bottom: 200%
-}
-
-.middle-link{
-  padding-left: 1vw;
-  padding-right: 1vw
-}
-.article-body{
-  border: 2px solid grey;
-  color: darkblue;
-  font-size: calc(0.75rem + 0.5vw)
-}
-.author{
-  color: darkblue
-}
-
-
-
-.article-title{
-
-width: 35vw;
-margin-right: auto;
-
-
-
-}
-.article-title:hover{
-  text-decoration: none
-  
+  .NavBar{
+    width: 30%;
+    margin: 0 auto; 
+     
   }
 
-.article-name{
-  color: darkblue;
-  font-size: calc(0.45rem + 0.7vw);
-  font-family: 'Source Sans Pro', sans-serif;
-  
+.HomeLink{
+    display: block;
+    width: 20%;
+    margin: 0 auto;
+    color: black;
+    text-align: center
 }
-
-.article-text{
-  /* font-size: calc(0.48rem + 0.8vw); */
-  /* font-family: 'Oswald', sans-serif; */
-  font-family: 'Merriweather', serif;
-  /* 'Times New Roman', Times, serif; */
-  font-size: calc(0.30rem + 0.8vw)
-}
-
-ul li div {
-  color: darkblue
-  
-}
-
-.user{
-  position: relative;
-  right: 30px;
-  font-size: calc(0.48rem + 0.8vw)
-}
-
-.link {
-  color: darkblue;
-}
-
-.article-part-1{
-  display: flex;
-  flex-direction: column;
-  
-  width: 25vw;
-  padding-left: 5vw
-}
-
-.article-part-2{
-  display: flex;
-  flex-direction: column;
-  margin-left: auto;
-  
-  justify-content: flex-start;
-  width: 20vw;
-  padding-left: 4vw;
-  
-}
-
-
-.home-header {
-  text-align: center;
-  font-size: calc(0.9rem + 3.5vw);
-  color: darkblue
-  
-}
-
-.article-description{
-  display: flex;
-  flex-direction: row;
-  
-  
-  
-  width: 45vw
- 
-}
-
-
-
-ul{list-style: none;}
-
-.article-container{
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
-  
-  
-}
-
-
-
-.like-button {
-  
-  transition-duration: 500ms;
-  width: 50px;
-  background-color: rgba(46, 143, 8, 0.37)
-}
-
-
-.like-button:hover{
-  background-color: green
-}
-.dislike-button:hover{
-  background-color: red;
-  
-}
-.like-button:disabled{
-  background-color: green;
-  color: green
+a{
+    text-decoration: none;
+    padding-left: 3%;
+    padding-right: 3%
 }
 a:hover{
-text-decoration: underline
-}
-.dislike-button:disabled{
-  background-color: red;
-  color: red
-}
-.dislike-button {
-  
-  transition-duration: 500ms;
-  width: 50px;
-  background-color: rgba(219, 10, 10, 0.37)
+    text-decoration: underline
 }
 
-
-.votes{
-  display: flex;
+ul{
+    list-style-type: none
 }
 
-.dislike-button:hover span {
-  padding-right: 50px;
+.topic-title{
+    margin: 0 auto;
+    width: 60%;
+    text-align: center
+}
+
+.article-card{ 
+    background: rgba(194, 90, 21, 0.5) ;
+    
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 10%;
+    border-width: 2px;
+    border-color: blue;
+    border-style: solid
+
+}
+
+.article-name{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.article-body{
+    line-height: 25px;
+    
+}
+
+.article-div{
+width:90%;
+margin: 0 auto
+
+}
+.home-header{
+    width: 30%;
+    margin: 0 auto;
+    text-align: center
+    
 }
 
 .topics{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center
-
+    display:flex;
+    flex-direction: row;
+    justify-content: center
 }
-.article-div{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center
+
+
+
+.in-sort-form{
+    display: flex;
+    flex-direction: row;
+    align-items: center
+}
+.article-text{
+    width: 50%;
+    text-align: center
+}
+
+.article-part-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center
+}
+.article-part-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center
+}
+
+.link{text-align: center} */
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+  }
+  button{
+    border-radius: 5px
+  }
   
+  .delete-button {
+    
+    background-color: whitesmoke;
+  }
+  
+  .article-card{
+    display: flex;
+    flex-direction: row;
+    
+    /* height: 55px; */
+    width: 80vw;
+    border: 2px solid darkblue;
+    justify-content: flex-end;
+    border-bottom: 1px solid darkblue;
+    /* padding-bottom: 5px; */
+    margin-top: 2% 
 }
-
-.home--mainitem{
+    
+  
+  
+  
+  
+  .error {
+    font-size: 50px;
+    height: 50%;
+    text-align: center;
+    padding-bottom: 200%
+  }
+  
+  
+  
+  .sort-title{
+    
+    font-size: calc(0.75rem + 0.5vw);
+    
+    
+  }
+  
+  
+  
+  
+  
+  
+  
+  .homepage-list{
   display: flex;
-  flex-wrap: wrap
-}
+  
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 80vw
+  }
+  
+  
+  #root {
+    color: darkblue;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  
+  .votes-handler{
+    padding-top: 10px
+  }
+  .sort-form{
+    align-self: flex-start;
+    /* padding-left: 7.8vw */
+    margin-right: auto
+  }
+  
+  textarea{
+    align-self: stretch;
+    
+  }
+  
+  .article-title-name{
+    width: 80vw;
+    margin: auto;
+    text-align: center;
+    font-size: calc(0.75rem + 0.5vw)
+  }
+  
+  
+  .form{
+    padding-top: 5px
+  }
+  
+  .main-container {
+    background-color: rgba(33, 33, 33, 0.151);
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 20px 20px 20px 20px
+    
+    
+  
+    
+    
+  }
+  
+  
+  
+  
+  
+  textarea{
+    position: relative;
+    top: 8px
+  }
+  
+  .user {
+    width: 80vw;
+    align-self: center;
+    text-align: right;
+    font-size: calc(0.48rem + 0.8vw)
+    
+    
+  }
+  
+  
+  
+  .comments {
+   
+    
+    
+    border: 2px solid grey;
+    margin-top: 50px
+  }
+  .NavBar {
+    text-align: center;
+    text-decoration: none;
+    color: darkblue;
+  }
+  
+  
+  
+  ul li:nth-child(2n) {
+    background-color: grey;
+    
+  }
+  
+  
+  
+  
+  
+ 
+  
+  .loading{
+    margin-bottom: 200%
+  }
+  
+  .middle-link{
+    padding-left: 1vw;
+    padding-right: 1vw
+  }
+  .article-body{
+    border: 2px solid grey;
+    color: darkblue;
+    font-size: calc(0.75rem + 0.5vw);
+    line-height: calc(0.75rem + 1vw)
+  }
+  .author{
+    color: darkblue
+  }
+  
+  
+  
+  
+  .article-title{
+  
+  width: 35vw;
+  margin-right: auto;
+  
+  
+  
+  }
+  .article-title:hover{
+    text-decoration: none
+    
+    }
+  
+  .article-name{
+    color: darkblue;
+    font-size: calc(0.45rem + 0.7vw);
+    font-family: 'Source Sans Pro', sans-serif;
+    
+  }
+  
+  .article-text{
+    /* font-size: calc(0.48rem + 0.8vw); */
+    /* font-family: 'Oswald', sans-serif; */
+    font-family: 'Merriweather', serif;
+    /* 'Times New Roman', Times, serif; */
+    font-size: calc(0.30rem + 0.8vw)
+  }
+  
+  ul li div {
+    color: darkblue
+    
+  }
+  
+  /* .user{
+    position: relative;
+    right: 30px;
+    font-size: calc(0.48rem + 0.8vw)
+  } */
+  
+  .link {
+    color: darkblue;
+    font-style: oblique
+  }
+  
+  .article-part-1{
+    display: flex;
+    flex-direction: column;
+    
+    width: 25vw;
+    padding-left: 5vw
+  }
+  
+  .article-part-2{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    
+    justify-content: flex-start;
+    width: 20vw;
+    padding-left: 4vw;
+    
+  }
+  
+  
+  .home-header {
+    text-align: center;
+    font-size: calc(0.9rem + 3.5vw);
+    color: darkblue
+    
+  }
+  
+  .article-description{
+    display: flex;
+    flex-direction: row;
+    
+    
+    
+    width: 45vw
+   
+  }
+  
+  
+  
+  ul{list-style: none;}
+  
+  .article-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    
+    
+  }
+  
+  
+  
+  .like-button {
+    
+    transition-duration: 500ms;
+    width: 50px;
+    background-color: rgba(46, 143, 8, 0.37)
+  }
+  
+  
+  .like-button:hover{
+    background-color: green
+  }
+  .dislike-button:hover{
+    background-color: red;
+    
+  }
+  .like-button:disabled{
+    background-color: green;
+    color: green
+  }
+  a:hover{
+  text-decoration: underline
+  }
+  .dislike-button:disabled{
+    background-color: red;
+    color: red
+  }
+  .dislike-button {
+    
+    transition-duration: 500ms;
+    width: 50px;
+    background-color: rgba(219, 10, 10, 0.37)
+  }
+  
+  
+  .votes{
+    display: flex;
+  }
+  
+  .dislike-button:hover span {
+    padding-right: 50px;
+  }
+  
+  .topics{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center
+  
+  }
+  .article-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80vw;
+    margin: 0 auto
+    
+  }
+  
+  .home--mainitem{
+    display: flex;
+    flex-wrap: wrap
+  }
+
+  /* 01256 365 650 */

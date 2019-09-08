@@ -4,12 +4,12 @@ import { Link } from "@reach/router";
 class NavBar extends Component {
   render() {
     return (
-      <nav className="NavBar">
-        <Link className="link" to="/">
+      <nav className= "NavBar">
+        <Link className="HomeLink link" to="/">
           Home
         </Link>
 
-        <h3>View by topic:</h3>
+        <h3 className='topic-title'>View by topic:</h3>
         <div className="topics">
           <Link className="link" to="/topics/football">
             Football
