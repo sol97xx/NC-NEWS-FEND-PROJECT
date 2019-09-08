@@ -17,7 +17,7 @@ class Article extends Component {
         <div className='article-container'>
         < div className = 'article-main'>
           <h2 className='article-title-name'>{this.state.Article.article.title}</h2>
-          <p className='article-body'>{this.state.Article.article.body}</p><br/>
+          <p className='article-body'>{this.state.Article.article.body}</p>
           <p className='author'>Author: {this.state.Article.article.author}</p> </div> 
 
           <div class='votes-handler'><VotesHandler 

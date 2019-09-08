@@ -133,7 +133,7 @@ margin: 0 auto
     justify-content: flex-end;
     border-bottom: 1px solid darkblue;
     /* padding-bottom: 5px; */
-    margin-top: 2% 
+    margin-top: calc(0.4rem + 0.5vw) 
 }
     
   
@@ -182,7 +182,7 @@ margin: 0 auto
   
   
   .votes-handler{
-    padding-top: 10px
+    padding-top: 5px
   }
   .sort-form{
     align-self: flex-start;
@@ -204,7 +204,7 @@ margin: 0 auto
   
   
   .form{
-    padding-top: 5px
+    padding-top: 50px
   }
   
   .main-container {
@@ -246,7 +246,7 @@ margin: 0 auto
     
     
     border: 2px solid grey;
-    margin-top: 50px
+    margin-top: 10px
   }
   .NavBar {
     text-align: center;
@@ -282,7 +282,8 @@ margin: 0 auto
     line-height: calc(0.75rem + 1vw)
   }
   .author{
-    color: darkblue
+    color: darkblue;
+    padding-top: 5px
   }
   
   
