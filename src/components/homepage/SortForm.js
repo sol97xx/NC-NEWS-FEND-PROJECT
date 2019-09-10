@@ -11,11 +11,11 @@ class SortForm extends Component {
           this.props.handleSubmit(e, this.state.value);
         }}
       >
-        <select className='sort-select' value={this.state.value} onChange={this.handleChange}>
-          <option value="created_at">created_at</option>
-          <option value="title">title</option>
-          <option value="votes">votes</option>
-          <option value="comment_count">comment_count</option>
+        <select className='sort-select option' value={this.state.value} onChange={this.handleChange}>
+          <option className='option' value="created_at">created_at</option>
+          <option className='option' value="title">title</option>
+          <option className='option' value="votes">votes</option>
+          <option className='option' value="comment_count">comment_count</option>
         </select>
         <input className='submit-button' type="submit" value="Submit" />
       </form>
